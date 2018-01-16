@@ -1,12 +1,4 @@
-Required Libraries
-- grpc
-- string
-- random
-- concurrent
-- time
-- sys
-
-Building
+# Building
 - cd ex3
 - virtualenv venv OR virtualenv --python=/usr/local/bin/python2.7 venv
 - source venv/bin/activate
