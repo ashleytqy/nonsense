@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+// the candidate service definition
+service Candidate {
+  // sends an answer
+  rpc Answer(AnswerRequest) returns (AnswerReply) {}
+  // sends an elaborate answer
+  rpc Elaborate(ElaborateRequest) returns (ElaborateReply) {}
+}
+
+// the answer request containing the question
+message AnswerRequest {
+  string question = 1;
+}
+
+// the answer reply containing the answer
+message AnswerReply {
+  string answer = 1;
+}
+
+// the elaborate answer request containing the topic
+message ElaborateRequest {
+  string topic = 1;
+  repeated int32 blah_run = 2;
+}
+
+// the elaborate reply containing the answer
+message ElaborateReply {
+  string answer = 1;
+}
