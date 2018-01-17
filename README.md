@@ -22,7 +22,7 @@ python -m grpc_tools.protoc -I. --python_out=. --grpc_python_out=. consultation.
 python -m grpc_tools.protoc -I. --python_out=. --grpc_python_out=. debate.proto
 ```
 
-## Runing server in another terminal
+## Running server in another terminal
 ```
 python server.py
 ```
