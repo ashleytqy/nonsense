@@ -22,25 +22,26 @@ python -m grpc_tools.protoc -I. --python_out=. --grpc_python_out=. consultation.
 python -m grpc_tools.protoc -I. --python_out=. --grpc_python_out=. debate.proto
 ```
 
-## Runing server on localhost
-In another terminal
+## Runing server in another terminal
 ```
 python server.py
 ```
 
 # Usage
-After ensuring server is running"
+After ensuring server is running
 ```
 ./moderator <answer OR elaborate> question [blah_run...]
 ```
 
-If using 'answer':
+If using `answer`:
 ```
 ./moderator answer what is your name
 ```
+Possible reply would be: **You asked me: what is my name but I want to say that: I promise a Tinder account to every citizen**
 
-If using 'elaborate':
+If using `elaborate`:
 ```
 ./moderator elaborate taxes 2 4 5
 ```
+Reply would be: **blah blah taxes blah blah blah blah taxes blah blah blah blah blah**
 
