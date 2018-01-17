@@ -1,7 +1,7 @@
 # What?
-This is an RPC service that simulates a debate using RPCs. There's a simple command line tool that wraps an RPC client that makes calls to the service.
+**Nonsense** is an RPC service that simulates a debate using RPCs. There's a simple command line tool that wraps an RPC client that makes calls to the service.
 
-Also, the RPC service will make calls to an external RPC service that will help it construct evasive answers to debate questions. The external service is configured to run on the IP address `23.236.49.28` on port `50051`.
+**Nonsense** also makes calls to an external RPC service that will help it construct evasive answers to debate questions. The external service is configured to run on the IP address `23.236.49.28` on port `50051`.
 
 Clearer instructions here: https://docs.google.com/document/d/1r-T7DBCCh9dxpMCO05azCOXkj90Z9__wz87awK2Fsh4/edit?usp=sharing
 
