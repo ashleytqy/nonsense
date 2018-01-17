@@ -32,7 +32,7 @@ After ensuring server is running
 ```
 ./moderator <answer OR elaborate> question [blah_run...]
 ```
----
+
 
 ## If using `answer`:
 ```
@@ -40,7 +40,7 @@ After ensuring server is running
 ```
 Possible reply would be: **You asked me: what is my name but I want to say that: I promise a Tinder account to every citizen**
 
----
+
 
 ## If using `elaborate`:
 ```
