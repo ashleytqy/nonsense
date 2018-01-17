@@ -1,4 +1,11 @@
-# Building
+# What?
+This is an RPC service that simulates a debate using RPCs. There's a simple command line tool that wraps an RPC client that makes calls to the service.
+
+Also, the RPC service will make calls to an external RPC service that will help it construct evasive answers to debate questions. The external service is configured to run on the IP address `23.236.49.28` on port `50051`.
+
+Clearer instructions here: https://docs.google.com/document/d/1r-T7DBCCh9dxpMCO05azCOXkj90Z9__wz87awK2Fsh4/edit?usp=sharing
+
+## Building
 ```
 virtualenv venv OR virtualenv --python=/usr/local/bin/python2.7 venv
 source venv/bin/activate
@@ -9,20 +16,20 @@ pip install concurrent
 chmod +x moderator
 ```
 
-# Invoke protoc in order to generate the stubs
+## Invoke protoc in order to generate the stubs
 ```
 python -m grpc_tools.protoc -I. --python_out=. --grpc_python_out=. consultation.proto
 python -m grpc_tools.protoc -I. --python_out=. --grpc_python_out=. debate.proto
 ```
 
-# Runing server on localhost
+## Runing server on localhost
 In another terminal
 ```
 python server.py
 ```
 
-# Using command line tool
-Ensure server is running on localhost
+# Usage
+After ensuring server is running"
 ```
 ./moderator <answer OR elaborate> question [blah_run...]
 ```
