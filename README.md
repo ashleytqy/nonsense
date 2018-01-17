@@ -32,14 +32,17 @@ After ensuring server is running
 ```
 ./moderator <answer OR elaborate> question [blah_run...]
 ```
+---
 
-If using `answer`:
+## If using `answer`:
 ```
 ./moderator answer what is your name
 ```
 Possible reply would be: **You asked me: what is my name but I want to say that: I promise a Tinder account to every citizen**
 
-If using `elaborate`:
+---
+
+## If using `elaborate`:
 ```
 ./moderator elaborate taxes 2 4 5
 ```
